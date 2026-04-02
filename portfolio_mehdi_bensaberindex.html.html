@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Mehdi BENSABER</title>
+<style>
+:root{
+    --blue:#0b3d91;
+    --yellow:#ffd700;
+    --text:#1a1a1a;
+    --muted:#5b6470;
+    --bg:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+nav {
+    position:sticky;
+    top:0;
+    z-index:10;
+    width:100%;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter: blur(8px);
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:14px 20px;
+    border-bottom:1px solid #e7e7e7;
+}
+nav a {
+    text-decoration:none;
+    color:var(--blue);
+    font-weight:bold;
+    letter-spacing:0.02em;
+}
+header {
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+        linear-gradient(135deg, var(--blue) 0%, var(--blue) 68%, var(--yellow) 68%, var(--yellow) 100%);
+    color:white;
+    text-align:center;
+}
+header h1 {
+    font-size:clamp(3rem, 8vw, 6rem);
+    margin:0;
+    line-height:0.95;
+    letter-spacing:0.06em;
+}
+header h2 {
+    margin:18px 0 10px;
+    padding:8px 16px;
+    background:white;
+    color:var(--blue);
+    display:inline-block;
+    font-size:clamp(1.1rem, 3vw, 1.6rem);
+}
+header p {
+    max-width:780px;
+    margin:10px auto 0;
+    font-size:1.05rem;
+    background:rgba(255,255,255,0.12);
+    padding:12px 16px;
+}
+main{
+    max-width:1050px;
+    margin:auto;
+    padding:40px 20px 80px;
+}
+section {
+    padding:28px 0 14px;
+}
+h3 {
+    color:var(--blue);
+    font-size:1.8rem;
+    margin-bottom:24px;
+    display:inline-block;
+    border-bottom:4px solid var(--yellow);
+    padding-bottom:6px;
+}
+.section-intro{
+    color:var(--muted);
+    margin:-8px 0 24px;
+    max-width:760px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:22px;
+}
+.project {
+    border:1px solid #ececec;
+    padding:22px;
+    background:white;
+    box-shadow:0 8px 24px rgba(11,61,145,0.06);
+}
+.project .meta{
+    color:var(--muted);
+    font-size:0.94rem;
+    margin-bottom:10px;
+}
+.project strong{
+    color:var(--blue);
+    font-size:1.08rem;
+}
+.project p{
+    margin:10px 0 16px;
+}
+.project a {
+    color:var(--blue);
+    font-weight:bold;
+    text-decoration:none;
+}
+.placeholder {
+    border:1px dashed #cfd7e6;
+    padding:24px;
+    color:var(--muted);
+    background:#fafcff;
+}
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:28px 20px 40px;
+    border-top:1px solid #ececec;
+}
+@media (max-width: 640px){
+    nav{gap:18px; font-size:0.95rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#videos">Vidéos</a>
+    <a href="#papiers">Papiers</a>
+    <a href="#podcast">Mon Podcast</a>
+</nav>
+
+<header>
+    <h1>Mehdi<br>BENSABER</h1>
+    <h2>Mon Portfolio</h2>
+    <p>Étudiant en journalisme — M1 Spécialisation Presse Magazine, IEJ Paris</p>
+</header>
+
+<main>
+    <section id="videos">
+        <h3>Vidéos</h3>
+        <p class="section-intro">Une sélection de formats audiovisuels réalisés dans le cadre de mes études et de mes expérimentations journalistiques : documentaire, reportage incarné, JT et incarnations vocales.</p>
+
+        <div class="grid">
+            <article class="project">
+                <div class="meta">Janvier 2026 · Mini-documentaire</div>
+                <strong>En Boucle</strong>
+                <p>Mini-documentaire qui explique le lien entre le pays de mes parents et le football à travers la CAN 2025.</p>
+                <a href="https://drive.google.com/file/d/1uLlPvay3g6HE2VSc86pUbjTYDCfp74bw/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
+            </article>
+
+            <article class="project">
+                <div class="meta">Reportage incarné · Format réseaux</div>
+                <strong>Le hip-hop comme outil éducatif</strong>
+                <p>Reportage incarné format réseaux sur comment le hip-hop éduque les enfants.</p>
+                <a href="https://drive.google.com/file/d/16kB5BzzGjXciN7RFZ0zvEcOcZGs6dS5K/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
+            </article>
+
+            <article class="project">
+                <div class="meta">Incarnation vocale · Format Loopsider</div>
+                <strong>Mort d'El Mencho</strong>
+                <p>Incarnation vocale à propos de la mort de Nemesio Oseguera Cervantes, alias "El Mencho".</p>
+                <a href="https://drive.google.com/file/d/14f0-EmNfJAORsD3M6L5eckBOl0X9RicW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
+            </article>
+
+            <article class="project">
+                <div class="meta">Reportage JT News · JRI</div>
+                <strong>L'essor du ping-pong en France</strong>
+                <p>Format JT News à propos de l'essor du ping-pong en France, sur lequel j'occupais le poste de JRI.</p>
+                <a href="https://drive.google.com/file/d/19e2USvZ_EFTyM9BqB7zo5zE4hnNDwwTf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
+            </article>
+
+            <article class="project">
+                <div class="meta">Incarnation vocale · Format sport</div>
+                <strong>La revanche de Désiré Doué</strong>
+                <p>Incarnation vocale à propos de la performance de Désiré Doué face à l'AS Monaco.</p>
+                <a href="https://drive.google.com/file/d/1G5-j2aTzYyj-vGNqadsxKRLiAcwcX-bK/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Voir la vidéo</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="papiers">
+        <h3>Papiers</h3>
+        <div class="placeholder">Les articles seront intégrés ici : titre, date, type, résumé et lien ou texte.</div>
+    </section>
+
+    <section id="podcast">
+        <h3>Mon Podcast</h3>
+        <div class="placeholder">
+            <strong>L'heure du départ</strong><br>
+            La présentation du podcast, ses épisodes et les liens d'écoute seront intégrés ici.
+        </div>
+    </section>
+</main>
+
+<footer>
+    Portfolio de Mehdi BENSABER
+</footer>
+
+</body>
+</html>
